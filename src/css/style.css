@@ -28,7 +28,7 @@
  * Here you would add any custom utilities you need that don't come out of the
  * box with Tailwind.
  */
-@import "./utils.css";
+@import "./custom-utilities.css";
 
 .field {
   @apply .border .py-2 .px-3 .text-grey-darkest;

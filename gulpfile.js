@@ -43,10 +43,11 @@ gulp.task('css', () => {
         throwError: true,
       }),
     ]))
+    // TODO: Not working
     // Run through Purgecss to remove unused styles
-    .pipe($.purgecss({
-      content: [ pkg.vars.purgecssFiles ]
-    }))
+    // .pipe($.purgecss({
+      // content: [ pkg.vars.purgecssFiles ]
+    // }))
     // TODO: Ensure this works after Purgecss
     // .pipe($.sourcemaps.write('./'))
     .pipe(gulp.dest(pkg.paths.dist.css));

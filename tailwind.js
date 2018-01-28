@@ -128,9 +128,18 @@ let colors = {
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
 
-  // Theme colors
-  'selection-bg-color': '#794acf', // 'purple-dark'
+  // Text selection colors
+  'selection-bg-color': '#000000', // 'purple-dark'
   'selection-text-color': '#22292f', // 'black'
+
+  // Theme colors
+  'furvur-orange': '#f36200',
+  'furvur-yellow': '#faf300',
+  'furvur-green': '#e1ed45',
+  'furvur-blue': '#0c12f0',
+  'furvur-blue-light': '#98d2e0',
+  'furvur-purple': '#361e1b',
+  'furvur-purple-light': '#372b6a',
 }
 
 module.exports = {
@@ -175,7 +184,6 @@ module.exports = {
     'md': '768px',
     'lg': '992px',
     'xl': '1200px',
-    // 'print': {'raw': 'print'},
   },
 
 
@@ -199,21 +207,12 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'alegreya sans',
       'system-ui',
-      // Using `postcss-font-family-system-ui`, so below will auto generated
-      // 'BlinkMacSystemFont',
-      // '-apple-system',
-      // 'Segoe UI',
-      // 'Roboto',
-      // 'Oxygen',
-      // 'Ubuntu',
-      // 'Cantarell',
-      // 'Fira Sans',
-      // 'Droid Sans',
-      // 'Helvetica Neue',
       'sans-serif',
     ],
     'serif': [
+      'maple-web',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',

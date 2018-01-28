@@ -1,0 +1,45 @@
+/**
+ * Display utilities
+ *
+ * Extending Tailwind's classes.
+ *
+ * https://tailwindcss.com/docs/display/
+ */
+
+/**
+ * Completely remove from the flow but leave available to screen readers.
+ *
+ * https://github.com/suitcss/utils-display/blob/master/lib/display.css
+ */
+
+@variants responsive {
+  .hidden-visually {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+  }
+}
+
+/**
+ * Works like `u-hidden-visually`, except element is displayed if it receives
+ * keyboard focus.
+ *
+ * http://cloudfour-patterns.netlify.com/patterns/utilities.html#display
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L149
+ */
+
+@variants responsive {
+  .hidden-til-focus:not(:focus) {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+}
