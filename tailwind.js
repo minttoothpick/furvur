@@ -129,7 +129,7 @@ let colors = {
   'pink-lightest': '#ffebef',
 
   // Text selection colors
-  'selection-bg-color': '#000000', // 'purple-dark'
+  'selection-bg-color': '#f36200', // 'purple-dark'
   'selection-text-color': '#22292f', // 'black'
 
   // Theme colors
