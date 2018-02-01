@@ -28,11 +28,7 @@ html { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
  */
 
 @at-root {
-
-  @-ms-viewport {
-    width: device-width;
-  }
-
+  @-ms-viewport { width: device-width; }
 }
 
 /* Text-level semantics (https://html.spec.whatwg.org/multipage/semantics.html#text-level-semantics)
