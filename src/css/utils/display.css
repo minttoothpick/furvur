@@ -14,12 +14,9 @@
 
 @variants responsive {
   .hidden-visually {
-    border: 0;
+    @apply .border-0 .overflow-hidden .p-0 .absolute;
     clip: rect(1px, 1px, 1px, 1px);
     height: 1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute !important;
     width: 1px;
   }
 }
@@ -34,12 +31,9 @@
 
 @variants responsive {
   .hidden-til-focus:not(:focus) {
-    border: 0;
+    @apply .border-0 .overflow-hidden .p-0 .absolute;
     clip: rect(1px, 1px, 1px, 1px);
     height: 1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
     width: 1px;
   }
 }

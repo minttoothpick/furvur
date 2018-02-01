@@ -1,0 +1,20 @@
+/**
+ * Link utilities
+ *
+ * https://github.com/suitcss/utils-link/blob/master/lib/link.css
+ */
+
+/**
+ * Clean link
+ *
+ * A link without any text-decoration at all.
+ *
+ * TODO: Well, this isn't really necessary, is it?
+ */
+
+.link-clean,
+.link-clean:hover,
+.link-clean:focus,
+.link-clean:active {
+  @apply .no-underline;
+}

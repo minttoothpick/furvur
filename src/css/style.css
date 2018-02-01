@@ -5,11 +5,13 @@
  * You can see the styles here:
  * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
  */
+
 @import "./tailwind-preflight.css";
 
 /**
  * Some custom base/reset styles
  */
+
 @import "./base.css";
 
 /**
@@ -22,12 +24,14 @@
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
  */
+
 @import "./tailwind-utilities.css";
 
 /**
  * Here you would add any custom utilities you need that don't come out of the
  * box with Tailwind.
  */
+
 @import "./custom-utilities.css";
 
 .field {

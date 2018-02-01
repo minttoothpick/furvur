@@ -5,9 +5,8 @@
  */
 
 @import './utils/display.css';
-@import './utils/margin-left.css';
-@import './utils/margin-right.css';
-@import './utils/width.css';
+@import './utils/link.css';
+@import './utils/outline.css';
 
 .transition-color {
   transition: color 0.25s ease;
