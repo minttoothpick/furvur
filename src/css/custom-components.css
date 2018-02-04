@@ -1,0 +1,8 @@
+/**
+ * Custom components
+ *
+ * Import from `./components/`; this file is included in `style.css`.
+ */
+
+@import './components/download.css';
+@import './components/icon.css';

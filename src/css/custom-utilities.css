@@ -4,6 +4,7 @@
  * Import from `./utils/`; this file is included in `style.css`.
  */
 
+@import './utils/spacing.css';
 @import './utils/display.css';
 @import './utils/link.css';
 @import './utils/outline.css';

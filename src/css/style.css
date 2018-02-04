@@ -20,6 +20,8 @@
  * override them.
  */
 
+@import "./custom-components.css";
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.

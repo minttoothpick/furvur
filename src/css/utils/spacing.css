@@ -1,0 +1,38 @@
+/**
+ * Spacing utilities
+ *
+ * Source: http://cloudfour-patterns.netlify.com/patterns/utilities.html#space
+ *
+ * TODO: stagger-items originally uses em units; do we want to rework a modular
+ *       scale in tailwind.js?
+ */
+
+@variants responsive {
+  /* .space-items-06 > * + * { @apply .mt-; }
+  .space-items-05 > * + * { @apply .mt-; }
+  .space-items-04 > * + * { @apply .mt-; }
+  .space-items-03 > * + * { @apply .mt-; }
+  .space-items-02 > * + * { @apply .mt-; }
+  .space-items-01 > * + * { @apply .mt-; } */
+  .space-items > * + * { @apply .mt-1; }
+  .space-items-1 > * + * { @apply .mt-2; }
+  .space-items-2 > * + * { @apply .mt-3; }
+  .space-items-3 > * + * { @apply .mt-4; }
+  .space-items-4 > * + * { @apply .mt-6; }
+  .space-items-5 > * + * { @apply .mt-8; }
+  /* .space-items-6 > * + * { @apply .mt-; } */
+/*
+  .stagger-items-06 > * + * { @apply .mt-; }
+  .stagger-items-05 > * + * { @apply .mt-; }
+  .stagger-items-04 > * + * { @apply .mt-; }
+  .stagger-items-03 > * + * { @apply .mt-; }
+  .stagger-items-02 > * + * { @apply .mt-; }
+  .stagger-items-01 > * + * { @apply .mt-; }
+  .stagger-items > * + * { @apply .mt-; }
+  .stagger-items-1 > * + * { @apply .mt-; }
+  .stagger-items-2 > * + * { @apply .mt-; }
+  .stagger-items-3 > * + * { @apply .mt-; }
+  .stagger-items-4 > * + * { @apply .mt-; }
+  .stagger-items-5 > * + * { @apply .mt-; }
+  .stagger-items-6 > * + * { @apply .mt-; } */
+}
