@@ -32,7 +32,7 @@ gulp.task('css', () => {
       $.postcssEasyImport(),
       $.tailwindcss(pkg.paths.config.tailwind),
       $.postcssFontFamilySystemUi(),
-      $.postcssWcagContrast(),
+      // $.postcssWcagContrast(),
       $.cssnano({
         autoprefixer: {
           add: true, // browserslist settings are in package.json

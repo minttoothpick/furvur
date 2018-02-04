@@ -9,6 +9,12 @@
 @import "./tailwind-preflight.css";
 
 /**
+ * Variables
+ */
+
+@import "./vars/colors.css";
+
+/**
  * Some custom base/reset styles
  */
 

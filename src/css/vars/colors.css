@@ -1,0 +1,29 @@
+/**
+ * Color variables
+ *
+ * Use these variables to override the default colors in `tailwind.js`.
+ * https://twitter.com/davidhemphill/status/930128422348689408
+ */
+
+:root {
+
+  /**
+   * Theme colors
+   */
+
+  --orange: #f36200;
+  --yellow: #faf300;
+  --green: #e1ed45;
+  --blue: #0c12f0;
+  --blue-light: #98d2e0;
+  --purple: #361e1b;
+  --purple-light: #372b6a;
+
+  /**
+   * Text selection colors
+   */
+
+  --selection-bg-color: var(--orange);
+  --selection-text-color: #22292f; /* TODO: This is config.colors.black */
+
+}
