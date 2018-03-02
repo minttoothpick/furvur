@@ -14,21 +14,21 @@
   ],
   "paths": {
     "config": {
-      "tailwind": "./tailwind.js"
+      "tailwind": "tailwind.js"
     },
     "src": {
-      "base": "./src/",
-      "css": "./src/css/",
-      "fonts": "./src/fonts/",
-      "images": "./src/images/",
-      "js": "./src/js/"
+      "base": "src/",
+      "css": "src/css/",
+      "fonts": "src/fonts/",
+      "images": "src/images/",
+      "js": "src/js/"
     },
     "dist": {
-      "base": "./dist/",
-      "css": "./dist/css/",
-      "fonts": "./dist/fonts/",
-      "images": "./dist/images/",
-      "js": "./dist/js/"
+      "base": "dist/",
+      "css": "dist/css/",
+      "fonts": "dist/fonts/",
+      "images": "dist/images/",
+      "js": "dist/js/"
     },
     "browserSync": {
       "proxy": "",
@@ -39,7 +39,7 @@
   "vars": {
     "cssName": "style.css",
     "imageminExtensions": "png,jpg,jpeg,gif,svg",
-    "purgecssFiles": "./src/**/*.html"
+    "purgecssFiles": "src/**/*.html"
   },
   "dependencies": {},
   "devDependencies": {

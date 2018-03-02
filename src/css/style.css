@@ -41,7 +41,3 @@
  */
 
 @import "./custom-utilities.css";
-
-.field {
-  @apply .border .py-2 .px-3 .text-grey-darkest;
-}

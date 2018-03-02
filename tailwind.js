@@ -44,90 +44,77 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 */
 
 let colors = {
-  'transparent': 'var(--transparent, transparent)',
-  'color-inherit': 'var(--color-inherit, inherit)',
+  'transparent': 'transparent',
+  'color-inherit': 'inherit',
 
-  'black': 'var(--black, #22292f)',
-  'grey-darkest': 'var(--grey-darkest, #3d4852)',
-  'grey-darker': 'var(--grey-darker, #606f7b)',
-  'grey-dark': 'var(--grey-dark, #8795a1)',
-  'grey': 'var(--grey, #b8c2cc)',
-  'grey-light': 'var(--grey-light, #dae1e7)',
-  'grey-lighter': 'var(--grey-lighter, #f1f5f8)',
-  'grey-lightest': 'var(--grey-lightest, #f8fafc)',
-  'white': 'var(--white, #ffffff)',
+  'black': '#070402',
+  'grey-darker': '#1c130d',
+  'grey-dark': '#1c1815',
+  'grey': '#2d2d2d',
+  'grey-light': '#494949',
+  'grey-lighter': '#6d6d6d',
+  'grey-lightest': '#9b9b9b',
+  'white': '#ffffff',
 
-  'red-darkest': 'var(--red-darkest, #3b0d0c)',
-  'red-darker': 'var(--red-darker, #621b18)',
-  'red-dark': 'var(--red-dark, #cc1f1a)',
-  'red': 'var(--red, #e3342f)',
-  'red-light': 'var(--red-light, #ef5753)',
-  'red-lighter': 'var(--red-lighter, #f9acaa)',
-  'red-lightest': 'var(--red-lightest, #fcebea)',
+  'red-darker': '#660e00',
+  'red-dark': '#a81c00',
+  'red': '#d52b00',
+  'red-light': '#e54c2e',
+  'red-lighter': '#f76652',
+  'red-lightest': '#ff988d',
 
-  'orange-darkest': 'var(--orange-darkest, #462a16)',
-  'orange-darker': 'var(--orange-darker, #613b1f)',
-  'orange-dark': 'var(--orange-dark, #de751f)',
-  'orange': 'var(--orange, #f6993f)',
-  'orange-light': 'var(--orange-light, #faad63)',
-  'orange-lighter': 'var(--orange-lighter, #fcd9b6)',
-  'orange-lightest': 'var(--orange-lightest, #fff5eb)',
+  'orange-darker': '#8e3900',
+  'orange-dark': '#c14e00',
+  'orange': '#f46400',
+  'orange-light': '#f98232',
+  'orange-lighter': '#ff9a55',
 
-  'yellow-darkest': 'var(--yellow-darkest, #453411)',
-  'yellow-darker': 'var(--yellow-darker, #684f1d)',
-  'yellow-dark': 'var(--yellow-dark, #f2d024)',
-  'yellow': 'var(--yellow, #ffed4a)',
-  'yellow-light': 'var(--yellow-light, #fff382)',
-  'yellow-lighter': 'var(--yellow-lighter, #fff9c2)',
-  'yellow-lightest': 'var(--yellow-lightest, #fcfbeb)',
+  'yellow-darker': '#9b8c00',
+  'yellow-dark': '#c6b700',
+  'yellow': '#f8ef00',
+  'yellow-light': '#fff064',
+  'yellow-lighter': '#fff188',
 
-  'green-darkest': 'var(--green-darkest, #0f2f21)',
-  'green-darker': 'var(--green-darker, #1a4731)',
-  'green-dark': 'var(--green-dark, #1f9d55)',
-  'green': 'var(--green, #38c172)',
-  'green-light': 'var(--green-light, #51d88a)',
-  'green-lighter': 'var(--green-lighter, #a2f5bf)',
-  'green-lightest': 'var(--green-lightest, #e3fcec)',
+  'green-darker': '#7f7f00',
+  'green-dark': '#b3b71a',
+  'green': '#e0ec42',
+  'green-light': '#f4f46e',
+  'green-lighter': '#fffa97',
 
-  'teal-darkest': 'var(--teal-darkest, #0d3331)',
-  'teal-darker': 'var(--teal-darker, #20504f)',
-  'teal-dark': 'var(--teal-dark, #38a89d)',
-  'teal': 'var(--teal, #4dc0b5)',
-  'teal-light': 'var(--teal-light, #64d5ca)',
-  'teal-lighter': 'var(--teal-lighter, #a0f0ed)',
-  'teal-lightest': 'var(--teal-lightest, #e8fffe)',
+  'teal-darker': '#2b8e8e',
+  'teal-dark': '#5eb3b7',
+  'teal': '#9bd3d9',
+  'teal-light': '#c1e8ea',
+  'teal-lighter': '#def9f9',
 
-  'blue-darkest': 'var(--blue-darkest, #12283a)',
-  'blue-darker': 'var(--blue-darker, #1c3d5a)',
-  'blue-dark': 'var(--blue-dark, #2779bd)',
-  'blue': 'var(--blue, #3490dc)',
-  'blue-light': 'var(--blue-light, #6cb2eb)',
-  'blue-lighter': 'var(--blue-lighter, #bcdefa)',
-  'blue-lightest': 'var(--blue-lightest, #eff8ff)',
+  'aqua-darker': '#0a3449',
+  'aqua-dark': '#265877',
+  'aqua': '#5a91b8',
+  'aqua-light': '#87b9d8',
+  'aqua-lighter': '#acd2e5',
 
-  'indigo-darkest': 'var(--indigo-darkest, #191e38)',
-  'indigo-darker': 'var(--indigo-darker, #2f365f)',
-  'indigo-dark': 'var(--indigo-dark, #5661b3)',
-  'indigo': 'var(--indigo, #6574cd)',
-  'indigo-light': 'var(--indigo-light, #7886d7)',
-  'indigo-lighter': 'var(--indigo-lighter, #b2b7ff)',
-  'indigo-lightest': 'var(--indigo-lightest, #e6e8ff)',
+  'blue-darker': '#000f7c',
+  'blue-dark': '#0411af',
+  'blue': '#0c12ef',
+  'blue-light': '#2d3cf7',
+  'blue-lighter': '#485eff',
 
-  'purple-darkest': 'var(--purple-darkest, #21183c)',
-  'purple-darker': 'var(--purple-darker, #382b5f)',
-  'purple-dark': 'var(--purple-dark, #794acf)',
-  'purple': 'var(--purple, #9561e2)',
-  'purple-light': 'var(--purple-light, #a779e9)',
-  'purple-lighter': 'var(--purple-lighter, #d6bbfc)',
-  'purple-lightest': 'var(--purple-lightest, #f3ebff)',
+  'indigo-darker': '#060323',
+  'indigo-dark': '#18113d',
+  'indigo': '#372862',
+  'indigo-light': '#574e7f',
+  'indigo-lighter': '#7d78a0',
 
-  'pink-darkest': 'var(--pink-darkest, #451225)',
-  'pink-darker': 'var(--pink-darker, #6f213f)',
-  'pink-dark': 'var(--pink-dark, #eb5286)',
-  'pink': 'var(--pink, #f66d9b)',
-  'pink-light': 'var(--pink-light, #fa7ea8)',
-  'pink-lighter': 'var(--pink-lighter, #ffbbca)',
-  'pink-lightest': 'var(--pink-lightest, #ffebef)',
+  'purple-darker': '#110205',
+  'purple-dark': '#26080e',
+  'purple': '#3f1b21',
+  'purple-light': '#6b3e48',
+  'purple-lighter': '#8e616d',
+
+  'tan-darker': '#897e49',
+  'tan-dark': '#c6be91',
+  'tan': '#f3f1e2',
+  'tan-light': '#f7f7f5',
 
   /**
    * Text selection colors
@@ -136,8 +123,8 @@ let colors = {
    * https://github.com/jonathantneal/sanitize.css/blob/master/sanitize.css
    */
 
-  'selection-bg-color': 'var(--selection-bg-color, #b3d4fc)',
-  'selection-text-color': 'var(--selection-bg-text-color, #000000)',
+  'selection-bg-color': '#b3d4fc',
+  'selection-text-color': '#000000',
 }
 
 module.exports = {
@@ -178,10 +165,16 @@ module.exports = {
   */
 
   screens: {
-    'sm': '576px',
-    'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
+    'sm-up': '576px',
+    'sm-down': { 'max': '575px' },
+    'sm-only': { 'min': '576px', 'max': '767px' },
+    'md-up': '768px',
+    'md-down': { 'max': '767px' },
+    'md-only': { 'min': '768px', 'max': '991px' },
+    'lg-up': '992px',
+    'lg-down': { 'max': '991px' },
+    'lg-only': { 'min': '992px', 'max': '1199px' },
+    'xl-up': '1200px',
   },
 
 
@@ -262,6 +255,7 @@ module.exports = {
     '3xl': '1.875rem',  // 30px
     '4xl': '2.25rem',   // 36px
     '5xl': '3rem',      // 48px
+    '6xl': '5rem',
   },
 
 
@@ -305,10 +299,12 @@ module.exports = {
   */
 
   leading: {
+    '0': 0,
     'none': 1,
     'tight': 1.25,
     'normal': 1.5,
     'loose': 2,
+    'looser': 2,
   },
 
 
@@ -552,6 +548,11 @@ module.exports = {
     '48': '12rem',
     '64': '16rem',
     'full': '100%',
+    '25': '25vh',
+    '50': '50vh',
+    '75': '70vh',
+    '80': '80vh',
+    '90': '90vh',
     'screen': '100vh',
   },
 
@@ -593,6 +594,11 @@ module.exports = {
   minHeight: {
     '0': '0',
     'full': '100%',
+    '25': '25vh',
+    '50': '50vh',
+    '75': '70vh',
+    '80': '80vh',
+    '90': '90vh',
     'screen': '100vh'
   },
 
@@ -672,6 +678,9 @@ module.exports = {
     '8': '2rem',
     '12': '3rem',
     '16': '4rem',
+    '24': '6rem',
+    '48': '12rem',
+    '56': '18rem',
   },
 
 
@@ -708,6 +717,7 @@ module.exports = {
     '8': '2rem',
     '12': '3rem',
     '16': '4rem',
+    '24': '6rem',
     '1/2': '50%',
     '1/3': 'calc(100% * 1 / 3)',
     '2/3': 'calc(100% * 2 / 3)',
@@ -777,6 +787,8 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '12': '3rem',
+    '16': '4rem',
   },
 
 
@@ -930,7 +942,7 @@ module.exports = {
     minHeight: ['responsive'],
     minWidth: ['responsive'],
     negativeMargin: ['responsive'],
-    opacity: ['responsive'],
+    opacity: ['responsive', 'hover'],
     overflow: ['responsive'],
     padding: ['responsive'],
     pointerEvents: ['responsive'],

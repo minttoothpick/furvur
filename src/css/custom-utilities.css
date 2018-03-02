@@ -4,10 +4,11 @@
  * Import from `./utils/`; this file is included in `style.css`.
  */
 
-@import './utils/spacing.css';
+@import './utils/aspect-ratio.css';
 @import './utils/display.css';
-@import './utils/link.css';
+@import './utils/full-bleed.css';
 @import './utils/outline.css';
+@import './utils/spacing.css';
 
 .transition-color {
   transition: color 0.25s ease;
@@ -17,13 +18,17 @@
   transition: fill 0.25s ease;
 }
 
+.transition-bg {
+  transition: background-color 0.25s ease;
+}
+
 @variants hover {
-  .fill-furvur-blue {
-    fill: config('colors.furvur-blue');
+  .fill-blue {
+    fill: var(--blue);
   }
 
-  .fill-furvur-green {
-    fill: config('colors.furvur-green');
+  .fill-green {
+    fill: var(--green);
   }
 }
 

@@ -23,7 +23,8 @@ gulp.task('css', () => {
   $.fancyLog('→ Compiling CSS');
   return gulp
     .src(pkg.paths.src.css + pkg.vars.cssName)
-    .pipe($.plumber({ errorHandler: onError }))
+    // TODO: Plumber is a big mess of output
+    // .pipe($.plumber({ errorHandler: onError }))
     // Initialize sourcemaps
     // TODO: Maybe we don't need sourcemaps?
     // .pipe($.sourcemaps.init({ loadMaps: true }))
@@ -51,7 +52,9 @@ gulp.task('css', () => {
     // }))
     // TODO: Ensure this works after Purgecss
     // .pipe($.sourcemaps.write('./'))
-    .pipe(gulp.dest(pkg.paths.dist.css));
+    .pipe(gulp.dest(pkg.paths.dist.css))
+    // Inject style changes via Browser Sync
+    .pipe($.browserSync.reload({ stream: true }));
 });
 
 /* Scripts
@@ -77,7 +80,9 @@ gulp.task('js', () => {
     .pipe($.if([ '*.js', '!*.min.js' ],
       $.rename({ suffix: '.min' })
     ))
-    .pipe(gulp.dest(pkg.paths.dist.js));
+    .pipe(gulp.dest(pkg.paths.dist.js))
+    // Inject JS changes via Browser Sync
+    .pipe($.browserSync.reload({ stream: true }));
 });
 
 /* Images
@@ -163,6 +168,7 @@ gulp.task('serve', ['html', 'css', 'js'], () => {
    *
    * Append with `.on('change', $.browserSync.reload)` to reload browser.
    */
+
   gulp.watch(pkg.paths.src.css + '**/*.css', ['css']);
 
   // Watch Tailwind config and build CSS on change
